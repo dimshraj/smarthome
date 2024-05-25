@@ -13,7 +13,6 @@ public class ProfileService: ProfileServiceProtocol {
     public init() {}
 
     public func fetchUserProfile(completion: @escaping (UserProfile) -> Void) {
-        // Mock network call
         let profile = UserProfile(id: 1, name: "John Doe", bio: "Software Engineer")
         completion(profile)
     }

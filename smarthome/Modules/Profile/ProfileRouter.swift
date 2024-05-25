@@ -31,7 +31,5 @@ class ProfileRouter: ProfileRouterProtocol {
     func logout() {
         let splashScreen = AssemblyBuilder.createSplashScreenModule(router: MainRouter())
         UIApplication.shared.setRootViewController(splashScreen)
-//        mainRouter.logout()
-//        mainRouter.showAuthScreen() вместо передачи роутера лучше подключить UserRepository удалить пользователя и вызвать splashScreen который проверяет авторизацию и ведет к авторизации? (одна точка входа в приложение) 
     }
 }

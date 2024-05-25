@@ -38,6 +38,7 @@ class UserRepository: UserRepositoryProtocol {
             switch result {
             case .success(let user):
                 self.storage.saveUser(user: user)
+                completion(.success(user))
             case .failure(let failure):
                 completion(.failure(.noData))
             }

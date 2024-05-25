@@ -26,10 +26,9 @@ class UserStorage: UserStorageProtocol {
     func saveUser(user: User) {
 
         let newUser = UserEntity(context: context)
+        newUser.token = user.token
         newUser.id = user.id
         newUser.name = user.name
-        newUser.token = user.token
-
         do {
             try context.save()
         } catch {
