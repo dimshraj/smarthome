@@ -1,0 +1,11 @@
+{
+    "aps": {
+        "alert": {
+            "title": "New Actor Information",
+            "body": "Check out the latest updates on your favorite actors!"
+        },
+        "sound": "default"
+    },
+    "type": "profileDetails",
+    "Simulator Target Bundle": "tech.ujin.ujinmodular"
+}
